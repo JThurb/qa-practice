@@ -35,6 +35,5 @@ Medium
 Open the products info page
 
 ## Actual result
-Got logged out.
-Website jumped to login page and showing error message:
-    -Epic sadface: You can only access '/inventory-item.html' when you are logged in
+1. Got logged out.
+2. Website jumped to login page and showing error message: Epic sadface: You can only access '/inventory-item.html' when you are logged in
