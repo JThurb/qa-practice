@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2026-05-27T13:22:50.900947" rpa="false" schemaversion="5">
-<suite id="s1" name="Smoke Test" source="C:\Users\turpe\OneDrive - Turun ammattikorkeakoulu\Uusi koulu\Ohjelmistotestaus\qa-practice\robot-tests\smoke_test.robot">
-<test id="s1-t1" name="Smoke Test" line="5">
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-05-27T13:22:50.932826" level="INFO">Robot Framework toimii</msg>
-<arg>Robot Framework toimii</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-05-27T13:22:50.932392" elapsed="0.000542"/>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2026-05-27T14:25:38.664650" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test" source="C:\Users\turpe\OneDrive - Turun ammattikorkeakoulu\Uusi koulu\Ohjelmistotestaus\qa-practice\robot-tests\login_test.robot">
+<test id="s1-t1" name="Successful Login" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-27T14:25:38.938857" level="INFO">Opening browser 'Edge' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-27T14:25:38.938598" elapsed="3.324997"/>
 </kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${True}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-05-27T13:22:50.933079" elapsed="0.000240"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-27T14:25:42.264884" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-27T14:25:42.264283" elapsed="0.098454"/>
 </kw>
-<status status="PASS" start="2026-05-27T13:22:50.931462" elapsed="0.001953"/>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-27T14:25:42.363280" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-05-27T14:25:42.384576" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-27T14:25:42.363021" elapsed="0.055799"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-27T14:25:42.419173" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-27T14:25:42.418988" elapsed="0.078714"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Products</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-05-27T14:25:42.497988" elapsed="0.010078"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-27T14:25:42.508298" elapsed="2.124807"/>
+</kw>
+<status status="PASS" start="2026-05-27T14:25:38.937807" elapsed="5.695485"/>
 </test>
-<status status="PASS" start="2026-05-27T13:22:50.903377" elapsed="0.030429"/>
+<status status="PASS" start="2026-05-27T14:25:38.667365" elapsed="5.966318"/>
 </suite>
 <statistics>
 <total>
@@ -24,7 +50,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Smoke Test" id="s1" pass="1" fail="0" skip="0">Smoke Test</stat>
+<stat name="Login Test" id="s1" pass="1" fail="0" skip="0">Login Test</stat>
 </suite>
 </statistics>
 <errors>
