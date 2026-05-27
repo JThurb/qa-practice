@@ -1,4 +1,4 @@
-# *Add to cart doesn't work*
+# **Add to cart doesn't work**
 
 ## Enviroment
 - DuckDuckGo
@@ -21,7 +21,7 @@ Only three out of six products are added to the cart.
 ## Severity
 Medium
 
-# *Opening products and looking for more details*
+# **Opening products and looking for more details**
 
 ## Enviroment
 - DuckDuckGo
