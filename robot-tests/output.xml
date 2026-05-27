@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2026-05-27T13:22:50.900947" rpa="false" schemaversion="5">
+<suite id="s1" name="Smoke Test" source="C:\Users\turpe\OneDrive - Turun ammattikorkeakoulu\Uusi koulu\Ohjelmistotestaus\qa-practice\robot-tests\smoke_test.robot">
+<test id="s1-t1" name="Smoke Test" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-05-27T13:22:50.932826" level="INFO">Robot Framework toimii</msg>
+<arg>Robot Framework toimii</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-05-27T13:22:50.932392" elapsed="0.000542"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${True}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-05-27T13:22:50.933079" elapsed="0.000240"/>
+</kw>
+<status status="PASS" start="2026-05-27T13:22:50.931462" elapsed="0.001953"/>
+</test>
+<status status="PASS" start="2026-05-27T13:22:50.903377" elapsed="0.030429"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Smoke Test" id="s1" pass="1" fail="0" skip="0">Smoke Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
