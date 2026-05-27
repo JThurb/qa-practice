@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Robot Framework
-	    run: pip install robotframework
+        run: pip install robotframework
 
       - name: Run tests
-	    run: robot robot-tests
+        run: robot robot-tests
