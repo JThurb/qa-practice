@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2026-05-27T13:22:35.477480" rpa="false" schemaversion="5">
+<suite id="s1" name="Qa-Practice" source="C:\Users\turpe\OneDrive - Turun ammattikorkeakoulu\Uusi koulu\Ohjelmistotestaus\qa-practice">
+<suite id="s1-s1" name="Robot-Tests" source="C:\Users\turpe\OneDrive - Turun ammattikorkeakoulu\Uusi koulu\Ohjelmistotestaus\qa-practice\robot-tests">
+<suite id="s1-s1-s1" name="Smoke Test" source="C:\Users\turpe\OneDrive - Turun ammattikorkeakoulu\Uusi koulu\Ohjelmistotestaus\qa-practice\robot-tests\smoke_test.robot">
+<test id="s1-s1-s1-t1" name="Smoke Test" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-05-27T13:22:35.610198" level="INFO">Robot Framework toimii</msg>
+<arg>Robot Framework toimii</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-05-27T13:22:35.609662" elapsed="0.000881"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${True}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-05-27T13:22:35.610831" elapsed="0.000458"/>
+</kw>
+<status status="PASS" start="2026-05-27T13:22:35.605985" elapsed="0.005515"/>
+</test>
+<status status="PASS" start="2026-05-27T13:22:35.536967" elapsed="0.077437"/>
+</suite>
+<status status="PASS" start="2026-05-27T13:22:35.517255" elapsed="0.099652"/>
+</suite>
+<status status="PASS" start="2026-05-27T13:22:35.486849" elapsed="0.132127"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Qa-Practice" id="s1" pass="1" fail="0" skip="0">Qa-Practice</stat>
+<stat name="Robot-Tests" id="s1-s1" pass="1" fail="0" skip="0">Qa-Practice.Robot-Tests</stat>
+<stat name="Smoke Test" id="s1-s1-s1" pass="1" fail="0" skip="0">Qa-Practice.Robot-Tests.Smoke Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
