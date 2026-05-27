@@ -8,7 +8,7 @@ ${BROWSER}    Edge
 *** Test Cases ***
 
 Successful Login
-    Open Browser    ${URL}    ${BROWSER}    options=add_argument(--headless);add_argument(--no-sandbox);add_argument(--disable-dev-shm-usage)
+    Open Browser    ${URL}    ${BROWSER}    options=add_argument("--headless");add_argument("--no-sandbox");add_argument("--disable-dev-shm-usage")
 
     Input Text    id:user-name    standard_user
     Input Password    id:password    secret_sauce
