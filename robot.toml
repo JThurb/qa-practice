@@ -1,2 +1,2 @@
-[tool.robot]
+[robot]
 output-dir = "robot-tests/results"
