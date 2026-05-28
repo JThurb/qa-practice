@@ -16,6 +16,7 @@ Invalid Login Shows Error
     Click button    id:login-button
 
     Wait Until Page Contains    Epic sadface
+    Capture Page Screenshot    invalid-login-screenshot.png
 
     Close Browser
 
