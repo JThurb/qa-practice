@@ -1,0 +1,32 @@
+name: Robot Framework Tests
+
+on:
+  push:
+    branches: [ main, feature/* ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install robotframework
+          pip install robotframework-seleniumlibrary
+          pip install selenium
+
+      - name: Install Edge
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Run Robot Tests
+        run: |
+          robot robot-tests
