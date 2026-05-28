@@ -24,7 +24,7 @@ jobs:
           pip install robotframework-seleniumlibrary
           pip install selenium
 
-      - name: Install Edge
+      - name: Install Chrome
         uses: browser-actions/setup-chrome@v1
 
       - name: Run Robot Tests

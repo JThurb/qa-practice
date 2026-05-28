@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${URL}        https://www.saucedemo.com/
-${BROWSER}    Edge
+${BROWSER}    Chrome
 
 *** Test Cases ***
 
