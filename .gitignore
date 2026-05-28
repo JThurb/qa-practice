@@ -1,8 +1,5 @@
 # Robot Framework results
-results/
-log.html
-report.html
-output.xml
+robot-tests/results/
 
 # Python
 __pycache__/
